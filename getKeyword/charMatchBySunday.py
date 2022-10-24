@@ -28,6 +28,7 @@ def find_str_begin(main_str, find_str):
            flag = m - f + f_len
            if flag > m_len - 1:
                return result
+           #如果上一步不匹配，则查找上一步中main_str索引后一位的字符，看在find_str中是否存在
            check_exits = find_str.rfind(main_str[flag])
            m,f=m_f_change(f_len,m,f,check_exits)
    else:
