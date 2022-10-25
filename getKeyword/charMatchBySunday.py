@@ -33,7 +33,7 @@ def find_str_begin(main_str, find_str):
            m,f=m_f_change(f_len,m,f,check_exits)
    else:
        return result
-print(find_str_begin('好多人喜欢吃苹果，苹果又大又甜又红','苹果'))
-print(find_str_begin('baa','aa'))
-print(find_str_begin('foobarfoobar', 'foobar'))
-print(find_str_begin('aaabaaabb','aa'))
+# print(find_str_begin('好多人喜欢吃苹果，苹果又大又甜又红','苹果'))
+# print(find_str_begin('baa','aa'))
+# print(find_str_begin('foobarfoobar', 'foobar'))
+# print(find_str_begin('aaabaaabb','aa'))
