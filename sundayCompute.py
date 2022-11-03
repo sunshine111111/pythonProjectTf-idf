@@ -5,7 +5,7 @@ import math
 import GrobalParament
 
 ###查找文档关键字，并且获取关键字的索引值
-def sandayCompute(file_import_url_temp,file_export_url_temp,*words):
+def sundayCompute(file_import_url_temp,file_export_url_temp,*words):
     #words=words_input
     file_import_url=file_import_url_temp.replace('\\','/')
     file_export_url=file_export_url_temp.replace('\\','/')
@@ -19,11 +19,7 @@ def sandayCompute(file_import_url_temp,file_export_url_temp,*words):
     files_num=0
     for data in datas:
         if data!="":
-            #data_temp={}
-            data_temp_1=[]
-            data_temp_2=[]
             data_temp_1=data.split('\\t') #file name and key words of a file
-            #seg_list = jieba.cut(data_temp_1[1], cut_all=True)
             file_content = data_temp_1[1]
             file_name=data_temp_1[0]
             files_num += 1
